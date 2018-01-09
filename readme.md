@@ -18,6 +18,19 @@ http://www.convertcsv.com/generate-test-data.htm
 These files are in the path ( data/CSV/ )
 A function built according to the input file the equivalent path for its reflection JSON ( data/JSON/ )
 
+How to execute scripts:
+
+1) no npm install required, no dependencies module used
+2) to launch the scripts, the syntax is as follows:
+$ node <script_name> <path of CSV file> <CSV separator | optionnal>
+
+example:
+$ node convert_read_memory_write.js data / CSV / customer-data.csv ','
+or
+$ node convert_stream_method.js data / CSV / customer-data.csv ','
+
+The output file is in the directory data / JSON / customer-data.json
+
     .
     ├── benchmark.js
     ├── common.js
@@ -70,6 +83,19 @@ Les scripts prennent en entrée un des fichiers CVS générés avec de fausses d
 http://www.convertcsv.com/generate-test-data.htm
 Ces fichiers se situent au chemin ( data/CSV/ )
 Une fonction construit en fonction du fichier d'entrée le chemin équivalent pour son reflet JSON ( data/JSON/ )
+
+Comment exécuter les scripts :
+
+1) no npm install, aucune dépendances avec des modules externe
+2) pour lancer les scripts, la syntaxe est la suivante:
+$ node <script_name> <path of CSV file> <CSV separator | optionnal>
+
+example : 
+$ node convert_read_memory_write.js data/CSV/customer-data.csv ','
+or
+node convert_stream_method.js data/CSV/customer-data.csv ','
+
+Le fichier de sortie est dans le répertoire data/JSON/customer-data.json
 
     .
     ├── benchmark.js
